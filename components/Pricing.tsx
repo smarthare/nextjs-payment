@@ -15,6 +15,7 @@ interface Props {
 type BillingInterval = 'year' | 'month';
 
 export default function Pricing({ products }: Props) {
+	
   const router = useRouter();
   const [billingInterval, setBillingInterval] =
     useState<BillingInterval>('month');
